@@ -1,0 +1,23 @@
+<h2><%= @question.question() %></h2>
+
+<form action="/question/<%= @question.id() %>" method="post">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="answer1"><%= @question.answer1() %>
+    </label>
+  </div>
+    <!-- <label>
+      <input type="checkbox" name="answer2"><%= @question.answer2() %>
+    </label>
+    <label>
+      <input type="checkbox" name="answer3"><%= @question.answer3() %>
+    </label>
+    <label>
+      <input type="checkbox" name="answer4"><%= @question.answer4() %>
+    </label>
+    <label>
+      <input type="checkbox" name="answer5"><%= @question.answer5() %>
+    </label>
+  </div> -->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
